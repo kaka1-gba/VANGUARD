@@ -4,6 +4,7 @@
 void Start(void) {
     SDA_High();
     SCL_High();
+   
     SDA_Low();
     SCL_Low();
 }
@@ -12,6 +13,7 @@ void Start(void) {
 void Stop(void) {
     SDA_Low();
     SCL_High();
+    
     SDA_High();
 }
 
@@ -26,6 +28,7 @@ void SendByte(unsigned char byte) {
             SDA_Low();
         }
         SCL_High();
+       
         SCL_Low();
         byte <<= 1;
     }
@@ -36,6 +39,7 @@ unsigned char ReceiveAck(void) {
     unsigned char ack;
     SDA_High(); 
     SCL_High();
+    
     ack = SDA_Read();
     SCL_Low();
     return ack;
