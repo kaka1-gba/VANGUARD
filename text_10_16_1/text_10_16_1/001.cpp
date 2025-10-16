@@ -18,16 +18,16 @@
 //	printf("\a");
 //	return 0;
 //}
-int main()
-{
+//int main()
+//{
 //	printf("abcdef\bq");
 //	printf("abcdef\r");
 //	getchar();
 //
-	printf("abcdef");
+	/*printf("abcdef");
 	getchar(); 
 	return 0;
-}
+}*/
 //int main()
 //{//\t 的宽度是8个字符
 //	printf("abcd\tdef\n");
@@ -58,3 +58,12 @@ int main()
 //	printf("c:\text\129\text.c");
 //	return 0;
 //}
+
+int main()
+{
+	int a = 20;
+	int b = 0;
+	b = a + 5;
+
+	return 0;
+}
